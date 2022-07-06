@@ -14,7 +14,7 @@
 
 # print('A soma vale', s)
 
-# Delarando o tipo
+# Declarando o tipo
 
 # n1 = int(input('Digite um número: '))
 # n2 = int(input('Digite mais um número: '))
