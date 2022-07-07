@@ -1,9 +1,24 @@
 # Desafio 009 - Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
 
-n = int(input('Digite um número inteiro: '))
+n = int(input('Digite um número para ver a sua tabuada: '))
 
-print('{}x1 = {}'.format(n, n*1), '\n{}x2 = {}'.format(n, n*2), end=' ')
-print('\n{}x3 = {}'.format(n, n*3), '\n{}x4 = {}'.format(n, n*4), end=' ')
-print('\n{}x5 = {}'.format(n, n*5), '\n{}x6 = {}'.format(n, n*6), end=' ')
-print('\n{}x6 = {}'.format(n, n*7), '\n{}x8 = {}'.format(n, n*8), end=' ')
-print('\n{}x9 = {}'.format(n, n*9), '\n{}x10 = {}'.format(n, n*10), end=' ')
+print('=' * 12)
+print('{} x {:2} = {}'.format(n, 1, n*1))
+print('{} x {:2} = {}'.format(n, 2, n*2))
+print('{} x {:2} = {}'.format(n, 3, n*3))
+print('{} x {:2} = {}'.format(n, 4, n*4))
+print('{} x {:2} = {}'.format(n, 5, n*5))
+print('{} x {:2} = {}'.format(n, 6, n*6))
+print('{} x {:2} = {}'.format(n, 7, n*7))
+print('{} x {:2} = {}'.format(n, 8, n*8))
+print('{} x {:2} = {}'.format(n, 9, n*9))
+print('{} x {:2} = {}'.format(n, 10, n*10))
+print('=' * 12)
+
+# Tabuada com 'for'
+
+# num = int(input('Valor: '))
+
+# for i in range(1, 11):
+#    v = num * i
+#    print('{} x {:2} = {}'.format(num, i, v))
