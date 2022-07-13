@@ -7,7 +7,7 @@ nomes = ['Fernando', 'Michelle', 'Karen', 'Max']
 
 shuffle(nomes)
 
-print('A ordem de apresentação él: {}'.format(nomes))
+print('A ordem de apresentação é: {}'.format(nomes))
 
 '''n1 = str(input('Primeiro nome: '))
 n2 = str(input('Segundo nome: '))
