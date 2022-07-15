@@ -6,7 +6,7 @@ valor = float(input('Quál é o valor do imóvel? '))
 sal = float(input('Qual é o salário do comprador? '))
 temp = int(input('Em quantos anos deseja pagar? '))
 
-valprest = valor / temp
+valprest = valor / (temp * 12)
 
 if valprest > sal*0.3:
     print('\033[31mFinanciamento reprovado! O valor da parcela excede 30% do salário!\033[m'

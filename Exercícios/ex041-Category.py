@@ -14,11 +14,11 @@ idade = date.today().year - nasc
 
 if idade <= 9:
     print('O atleta tem {} anos. Sua categoria é Mirim!'.format(idade))
-elif (idade > 9) and (idade <= 14):
+elif idade <= 14:
     print('O atleta tem {} anos. Sua categoria é Infantil!'.format(idade))
-elif (idade > 14) and (idade <= 19):
+elif idade <= 19:
     print('O atleta tem {} anos. Sua categoria é Junior!'.format(idade))
-elif (idade > 19) and (idade <= 20):
+elif idade <= 25:
     print('O atleta tem {} anos. Sua categoria é Sênior!'.format(idade))
 else:
     print('O atleta tem {} anos. Sua categoria é Master!'.format(idade))

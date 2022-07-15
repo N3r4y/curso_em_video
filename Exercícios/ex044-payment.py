@@ -24,11 +24,14 @@ if opc == 1:
     print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['1'],
                                                                                     val - ((val * 10) / 100)))
 elif opc == 2:
-    print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['1'],
+    print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['2'],
                                                                                     val - ((val * 5) / 100)))
 elif opc == 3:
-    print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['1'],
-                                                                                    val))
+    print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['3'],
+                                                                                     val))
 else:
-    print('\nA opção escolhida foi {}.\nO valor total a pagar é de R${:.2f}.'.format(opcoes['1'],
-                                                                                    val + ((val * 20) / 100)))
+    total = val + ((val * 20) / 100)
+    parc = int(input('Quantas parcelas?'))
+    vparc = total / parc
+    print('\nA opção escolhida foi {}x no cartão.\nO valor total a pagar é de R${:.2f} em {} parcelas de R${}.'.
+          format(parc, total, parc, vparc))

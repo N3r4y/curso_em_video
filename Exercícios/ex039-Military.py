@@ -6,15 +6,20 @@
 
 from datetime import date
 
+atual = date.today().year
 nasc = int(input('Qual é o seu ano de nascimento? '))
+idade = atual - nasc
+print('Quem nasceu em {} tem {} anos em {}.'.format(nasc, idade, atual))
 
-dif = date.today().year - nasc
-
-if dif > 18:
-    dif = dif - 18
+if idade > 18:
+    dif = idade - 18
     print('Já se passaram {} anos da data do seu alistamento militar obrigatório!'.format(dif))
-elif dif < 18:
-    dif = 18 - dif
+    ano = atual + dif
+    print('Seu alistamento foi em {}.'.format(ano))
+elif idade < 18:
+    dif = 18 - idade
     print('Falta {} anos para o seu alistamento militar obrigatório!'.format(dif))
+    ano = atual - dif
+    print('Seu alistamento será em {}.'.format(ano))
 else:
     print('Você deve se alistar no serviço militar obrigatório este ano!')

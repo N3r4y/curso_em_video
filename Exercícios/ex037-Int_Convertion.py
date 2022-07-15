@@ -13,8 +13,10 @@ print('Qual base de conversão você deseja usar?:'
 esc = int(input('Insira uma opção: '))
 
 if esc == 1:
-    print(bin(num), 'em binário.')
+    print('{} Convertido para binário é igual à {} em binário'.format(num, bin(num)[2:]))
 elif esc == 2:
-    print(oct(num), 'em otcal.')
+    print('{} Convertido para binário é igual à {} em octal.'.format(num, oct(num)[2:]))
+elif esc == 3:
+    print('{} Convertido para binário é igual à {} em hexadecimal.'.format(num, hex(num)[2:]))
 else:
-    print(hex(num), 'em hexadecimal.')
+    print('Opção inválida. Tente novamente.')
